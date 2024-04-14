@@ -24,8 +24,7 @@ console.log(
   '\n Balance of miner-reward is',
   cherryCoin.getBalanceOfAddresss(myWalletAddress)
 );
-console.log(JSON.stringify(cherryCoin.chain, null, 4));
+
 cherryCoin.chain[1].transactions[0].amount = 1;
-console.log(JSON.stringify(cherryCoin.chain, null, 4));
 
 console.log('Is Chain valid?', cherryCoin.isChainValid());
